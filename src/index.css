@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes bounce-up {
+    0%, 100% {
+      transform: translateY(100);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+  }
+  
+  /* Animasi bounce ke bawah (reverse) */
+  @keyframes bounce-down {
+    0%, 100% {
+      transform: translateY(-100);
+    }
+    50% {
+      transform: translateY(100px);
+    }
+  }
+  
+  /* Kode untuk animasi bounce */
+  .animate-bounce {
+    animation: bounce-up 5s infinite alternate; /* Animasi ke atas dan ke bawah secara bergantian */
+  }
+  
+  /* Kode untuk animasi bounce reverse */
+  .animate-bounce-reverse {
+    animation: bounce-down 5s infinite alternate; /* Animasi ke bawah dan ke atas secara bergantian */
+  }
+
+  body{
+    background-color: #FFFFFF; /* Ganti dengan warna latar belakang yang Anda inginkan */
+  }
+
+  footer{
+    border: 1px solid blue;
+  }
