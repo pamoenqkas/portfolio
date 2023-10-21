@@ -13,7 +13,7 @@ const Main = () => {
         {/* <div className='bg-slate-50 dark:bg-slate-600 max-w-full px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4'> */}
         <div className='bg-slate-50 dark:bg-slate-600 max-w-full p-5 m-2 mb-1'>
           <div className='flex justify-between items-center space-x-4'>
-            <img src='src/assets/icons8-fedex.svg' alt='Logo FedEx' className='w-24 h-24'></img>
+            <img src='public/assets/icons8-fedex.svg' alt='Logo FedEx' className='w-24 h-24'></img>
             <div className='space-x-4'>
               {/* Your other content here */}
             </div>
@@ -95,7 +95,7 @@ const Main = () => {
               <div className="rounded-full w-50 h-50 overflow-hidden bg-gradient-to-bl from-blue-200 to-pink-500 dark:from-slate-600 dark:to-black">
                   <div className="flex justify-center relative">
                     <img
-                      src="src/assets/wsp.png"
+                      src="public/assets/wsp.png"
                       alt="Your Image Alt Text"
                       className="w-100 h-100 rounded-full overflow-hidden"
                     />
