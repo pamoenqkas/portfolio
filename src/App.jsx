@@ -16,167 +16,175 @@ const Main = () => {
     <>
       <section>
         <div className="scroll-smooth focus:scroll-auto">
-          <div className="bg-[#EDF5E1] sticky z-50 top-0 dark:bg-[#05386B] max-w-full p-5 border-b-2 border-[#05386B] dark:border-[#EDF5E1]">
+          <div className="bg-[#EDF5E1] sticky z-50 top-0 dark:bg-[#05161A] max-w-full p-5 border-b-2 border-[#05386B] dark:border-[#0C7075]">
             <div className="flex justify-between items-center space-x-4">
               <img
                 src="./assets/icon-navbar.svg"
                 alt="Icon"
                 className="w-10 h-10"
               ></img>
-              <div className="bg-slate dark:bg-[#05386B] h-12 w-12 flex items-center justify-center rounded-full">
+              <div className="bg-slate dark:bg-[#05161A] h-12 w-12 flex items-center justify-center rounded-full">
                 <ThemeSwitcher />
               </div>
             </div>
-          </div>        
+          </div>
           {/* nav */}
           {/* bg-gradient-to-b from-[#EDF5E1] to-[#8EE4AF] */}
-            <div className="container bg-[#8EE4AF] dark:bg-[#379683] xl:rounded-br-3xl rounded-br-3xl pt-4 max-w-full">
-              <div className=" rounded-lg  p-4 px-4 py-5 lg:p-6 m-6 dark:from-black dark:to-slate-600 text-gray-200">
-                <div className="flex items-center justify-center ">
-                  <div className="md:w-2/3 ">
-                    <p className="text-lg text-[#05386B] dark:text-white m-2 mt-1 p-2 text-center">
-                      G'day, I'm
+          <div className="container bg-[#8EE4AF] dark:bg-[#072E33] p-6 max-w-full">
+            <div className="p-6 m-6 dark:from-black dark:to-slate-600 text-gray-200">
+              <div className="flex items-center justify-center ">
+                <div className="md:w-2/3 ">
+                  <p className="text-lg text-[#05386B] dark:text-white m-2 mt-1 p-2 text-center">
+                    G'day, I'm
+                  </p>
+                  <p className="text-5xl font-bold dark:text-[#EDF5E1] text-[#05386B] m-2 p-2 text-center">
+                    Wahyu Sutanto Pamungkas
+                  </p>
+                  <p className="text-lg font-semibold text-[#05386B]  dark:text-[#EDF5E1] m-2 p-2 text-center">
+                    Web Developer
+                  </p>
+                  <div className="items-center">
+                    <p className="font-mono text-lg m-2 p-2 text-center text-[#05386B] dark:text-[#EDF5E1] xl:text-justify">
+                      I'm an Informatics at Atma Jaya Yogyakarta University with
+                      a high interest learner and ambitious. Currently learning
+                      and exploring Web Development. Experienced in managing
+                      organizational members and ensuring all members carry out
+                      tasks according to the division that has been given in
+                      order to achieve the organization's vision and mission by
+                      became vice-chairman for Himpunan Mahasiswa Informatika
+                      UAJY.
                     </p>
-                    <p className="text-5xl font-bold text-[#EDF5E1] dark:text-[#05386B] m-2 p-2 text-center">
-                      Wahyu Sutanto Pamungkas
-                    </p>
-                    <p className="text-lg font-semibold text-[#05386B]  dark:text-[#EDF5E1] m-2 p-2 text-center">
-                      Web Developer
-                    </p>
-                    <div className="items-center">
-                      <p className="font-mono text-lg m-2 p-2 text-center text-[#05386B] dark:text-[#EDF5E1] xl:text-justify">
-                        I'm an Informatics at Atma Jaya Yogyakarta University
-                        with a high interest learner and ambitious. Currently
-                        learning and exploring Web Development. Experienced in
-                        managing organizational members and ensuring all members
-                        carry out tasks according to the division that has been
-                        given in order to achieve the organization's vision and
-                        mission by became vice-chairman for Himpunan Mahasiswa
-                        Informatika UAJY.
-                      </p>
-                    </div>  
-                    <div>
-                      <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-between items-center">
-                        <div className="md:w-1/2">
-                          <h1 className="text-lg font-mono text-[#EDF5E1] dark:text-[#05386B] font-medium text-center mt-4 xl:text-xl">
-                            My Social Media
-                          </h1>
-                          {/* Konten Sebelah Kiri (align left) */}
-                          <div className="flex justify-center text-center items-center m-2 ">
-                            <a
-                              href="https://github.com/pamoenqkas"
-                              target="_blank"
-                              rel="noopener noreferrer"
+                  </div>
+                  <div>
+                    <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-between items-center">
+                      <div className="md:w-1/2">
+                        <h1 className="text-lg font-mono dark:text-[#EDF5E1] text-[#05386B] font-medium text-center mt-4 xl:text-xl">
+                          My Social Media
+                        </h1>
+                        {/* Konten Sebelah Kiri (align left) */}
+                        <div className="flex justify-center text-center items-center m-2 ">
+                          <a
+                            href="https://github.com/pamoenqkas"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <IconButton text="Github">
+                              <GitHub size={20} />
+                            </IconButton>
+                          </a>
+                          <a
+                            href="https://www.instagram.com/pamoenqkas_/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <IconButton
+                              text="Instagram"
+                              color="bg-gradient-to-tr from-yellow-500 to-purple-500 via-pink-500 dark:bg-gradient-to-tr dark:from-[#8EE4AF] dark:to-[#05386B]"
                             >
-                              <IconButton text="Github">
-                                <GitHub size={20} />
-                              </IconButton>
-                            </a>
-                            <a
-                              href="https://www.instagram.com/pamoenqkas_/"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <IconButton
-                                text="Instagram"
-                                color="bg-gradient-to-tr from-yellow-500 to-purple-500 via-pink-500 dark:bg-gradient-to-tr dark:from-[#8EE4AF] dark:to-[#05386B]"
-                              >
-                                <Instagram size={20} />
-                              </IconButton>
-                            </a>
-                          </div>
+                              <Instagram size={20} />
+                            </IconButton>
+                          </a>
                         </div>
-                        <div className="md:w-3/4">
-                          <h1 className="text-lg font-mono text-[#EDF5E1] dark:text-[#05386B] font-medium text-center mt-4 xl:text-xl">
-                            My Portfolio
-                          </h1>
-                          <div className="flex justify-center text-center items-center m-2 ">
-                            <a
-                              href="https://drive.google.com/file/d/1kC72tENfD5ZsxXbG1wNs4OrBYITfMlj4/view"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <IconButton
-                                text="CV"
-                                color="  bg-[#05386B]   text-white dark:text-gray-100 "
-                              >
-                                <Grid size={20} />
-                              </IconButton>
-                            </a>
-                          </div>
-                        </div>{" "}
-                        {/* container */}
                       </div>
+                      <div className="md:w-3/4">
+                        <h1 className="text-lg font-mono dark:text-[#EDF5E1] text-[#05386B] font-medium text-center mt-4 xl:text-xl">
+                          My Portfolio
+                        </h1>
+                        <div className="flex justify-center text-center items-center m-2 ">
+                          <a
+                            href="https://drive.google.com/file/d/1kC72tENfD5ZsxXbG1wNs4OrBYITfMlj4/view"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <IconButton
+                              text="CV"
+                              color="  bg-[#05386B]   text-white dark:text-gray-100 "
+                            >
+                              <Grid size={20} />
+                            </IconButton>
+                          </a>
+                        </div>
+                      </div>{" "}
+                      {/* container */}
                     </div>
                   </div>
-                  <div className="hidden md:w-1/2 xl:flex flex-row justify-center items-center">
-                    {/* Kiri Ball*/}
-                    {/* <div className="hidden md:flex justify-center items-center px-4 py-4 mx-4 my-4">
+                </div>
+                <div className="hidden md:w-1/2 xl:flex flex-row justify-center items-center">
+                  {/* Kiri Ball*/}
+                  {/* <div className="hidden md:flex justify-center items-center px-4 py-4 mx-4 my-4">
                       <div className="my-8 bg-gradient-to-bl rounded-full dark:from-[#379683] dark:to-[#5CDB95] from-[#05386B] to-[#379683] w-24 h-24 justify-center items-center animate-bounce">
                       </div>
                     </div> */}
-                    {/* Tengah */}
-                    <div className="bg-transparent dark:bg-transparent dark:bg-slate-600 flex-grow flex justify-center items-center  lg:w-48">
-                      <div className="flex flex-col">
-                        <div className="px-2 py-2 mx-2 my-4 bg-gradient-to-br from-[#05386B] to-[#379683] rounded-full md:w-auto h-auto justify-center dark:bg-gradient-to-br dark:from-[#379683] dark:to-[#5CDB95]">
-                          <div className="rounded-full w-50 h-50 overflow-hidden bg-gradient-to-l from-[#EDF5E1] to-[#379683] dark:from-[#05386B] dark:to-[#4d6c8b]  ">
-                            <div className="flex justify-center">
-                              <img
-                                src="./assets/wsp.png"
-                                alt="Your Image Alt Text"
-                                className="w-100 h-100 rounded-full overflow-hidden"
-                              />
-                            </div>
+                  {/* Tengah */}
+                  <div className="bg-transparent dark:bg-transparent dark:bg-slate-600 flex-grow flex justify-center items-center  lg:w-48">
+                    <div className="flex flex-col">
+                      <div className="px-2 py-2 mx-2 my-4 bg-gradient-to-br from-[#05386B] to-[#379683] dark:bg-gradient-to-br dark:from-[#379683] dark:to-[#5CDB95] rounded-full md:w-auto h-auto justify-center">
+                        <div className="rounded-full w-50 h-50 overflow-hidden bg-gradient-to-l from-[#EDF5E1] to-[#379683] dark:from-[#072E33] dark:to-[#0C7075]  ">
+                          <div className="flex justify-center">
+                            <img
+                              src="./assets/wsp.png"
+                              alt="Your Image Alt Text"
+                              className="w-100 h-100 rounded-full overflow-hidden"
+                            />
                           </div>
                         </div>
-                        {/* button-button */}
                       </div>
+                      {/* button-button */}
                     </div>
-                    {/* Kanan Ball */}
-                    {/* <div className="hidden md:flex justify-center items-center px-4 py-4 mx-4 my-4">
+                  </div>
+                  {/* Kanan Ball */}
+                  {/* <div className="hidden md:flex justify-center items-center px-4 py-4 mx-4 my-4">
                       <div className="my-8 bg-gradient-to-bl rounded-full from-[#05386B] to-[#379683] dark:from-[#379683] dark:to-[#5CDB95] w-24 h-24 justify-center items-center animate-bounce-reverse  ">
                       </div>
                     </div> */}
-                  </div>
                 </div>
               </div>
-              {/* asdas */}
-              {/* Konten Sebelah Kanan (align right) */}
             </div>
+            {/* asdas */}
+            {/* Konten Sebelah Kanan (align right) */}
           </div>
-        
+        </div>
+
         {/* nav */}
       </section>
-      <div className="max-w-2xl  xl:max-w-6xl flex items-center justify-center mx-6 mt-3 mb-3 xl:mx-auto xl:h-auto  bg-slate-500"> 
-      {/* <div className="max-w-2xl  xl:max-w-6xl flex items-center justify-center mx-auto xl:mx-12 xl:mt-3 xl:mb-3 bg-slate-500"> */}
-        <div className="text-2xl font-bold text-slate-400 p-2 "> 
-         My Project 
-        </div>
-      </div>
-      <ProjectCard
-        title="Go-Fit"
-        isDisabled={false}
-        imageSrc="./assets/project/Gofit.png"
-        titleButton="Gofit"
-        description="GoFit is a fitness center support application that can be accessed easily via the website.This website was developed
+      <div className="pt-3 pb-2 bg-[#EDF5E1] dark:bg-[#05161A]">
+        <div className="max-w-2xl xl:max-w-6xl flex items-center justify-center mx-6 mt-3 mb-3 xl:mx-auto xl:h-auto bg-[#8EE4AF] dark:bg-gradient-to-r dark:bg-[#072E33] ">
+          <div className="flex items-center justify-center pr-2">
+            {/* Left Element */}
+            <span className="w-6 h-6 dark:bg-[#8EE4AF] bg-[#072E33] rounded-full"></span>
+          </div>
+          <h1 className="text-lg font-mono dark:text-[#EDF5E1] text-[#05386B] font-medium text-center p-2 xl:text-2xl">
+            My Project
+          </h1>
+          <div className="flex items-center justify-center pl-2">
+            {/* Right Element */}
+            <span className="w-6 h-6 dark:bg-[#8EE4AF] bg-[#072E33] rounded-full"></span>
+          </div>
+        </div> 
+        <ProjectCard
+          title="Go-Fit"
+          isDisabled={false}
+          imageSrc="./assets/project/GO-fit.png"
+          titleButton="Gofit"
+          description="GoFit is a fitness center support application that can be accessed easily via the website.This website was developed
         using Laravel 9 for the back-end, Vue 3 for the front-end, and incorporates the Bootstrap library for a responsive design.  "
-        Image1="./assets/project/Laravel.png"
-        Image2="./assets/project/Vue.png"
-        Image3="./assets/project/postman.png"
-        Image4="./assets/project/phpmyadminlogo.png"
-      />
-      <ProjectCard
-        title="SIATMA for University Workforce"
-        isDisabled={true}
-        titleButton="Private Repository"
-        imageSrc="./assets/Gofit.png"
-        description="SIATMA (Sistem Informasi Atma Jaya Yogyakarta) used by university workforce such as admins 
+          Image1="./assets/project/Laravel.png"
+          Image2="./assets/project/Vue.png"
+          Image3="./assets/project/postman.png"
+          Image4="./assets/project/phpmyadminlogo.png"
+        />
+        <ProjectCard
+          title="SIATMA for University Workforce"
+          isDisabled={true}
+          titleButton="Private Repository"
+          imageSrc="./assets/project/Siatma.png"
+          description="SIATMA (Sistem Informasi Atma Jaya Yogyakarta) used by university workforce such as admins 
                       of Information Systems Offices, Study Programs, Lecture Administration and Examination Administration using ASP.NET 6 CORE MVCs."
-        Image1="./assets/project/csharp.png"
-        Image2="./assets/project/mssql.png"
-      />
-      <section></section>
-      <EmailForm />
+          Image1="./assets/project/csharp.png"
+          Image2="./assets/project/mssql.png"
+        />
+      </div>
+      {/* <EmailForm /> */}
     </>
   );
 };

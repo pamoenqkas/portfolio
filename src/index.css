@@ -39,3 +39,20 @@
       scroll-behavior: smooth;
       background-color: #f8fafc; 
     } 
+
+    :root {
+      --bg-light: #8EE4AF;
+    }
+    
+    body.light-mode {
+      background-color: var(--bg-light);
+    }
+    
+    /* Dark Mode */
+    :root {
+      --bg-dark: #072E33;
+    }
+    
+    body.dark-mode {
+      background-color: var(--bg-dark);
+    }

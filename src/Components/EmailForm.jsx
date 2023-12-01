@@ -39,7 +39,7 @@ export const EmailForm = () => {
 
   return (
     <section>
-      <div className="scroll-smooth focus:scroll-auto bg-slate-50 dark:bg-slate-600 flex flex-col-reverse md:flex-row">
+      <div className=" bg-slate-50 dark:bg-slate-600 flex flex-col-reverse md:flex-row">
         <div className=" pt-4 pb-4">
           <div className="container bg-gradient-to-bl from-[#EDF5E1] to-[#8EE4AF] dark:from-black dark:to-slate-600 xl:rounded-bl-3xl rounded-bl-3xl rounded-tr-3xl pt-4 max-w-full">
             <div className="m-4">

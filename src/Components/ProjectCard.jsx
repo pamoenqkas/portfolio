@@ -23,7 +23,7 @@ const ProjectCard = ({
     // <div class="flex items-center justify-center h-screen">
     // <div class="w-1/2 bg-blue-500 p-4">
     // <div className="max-w-2xl  xl:max-w-6xl flex items-center justify-center mx-6 mt-3 mb-3 bg-slate-500"> 
-    <div className="scroll-smooth focus:scroll-auto max-w-2xl xl:max-w-6xl flex items-center justify-center mx-6 xl:mx-auto xl:h-auto rounded-2xl bg-slate-500 m-5  ">
+    <div className="max-w-2xl xl:max-w-6xl flex items-center justify-center mx-6 xl:mx-auto xl:h-auto rounded-2xl bg-[#8EE4AF] dark:bg-[#072E33] m-5  ">
       <div className="flex flex-col md:flex-row ">
         <div className="md:w-2/3 flex items-center justify-center">
           <img
@@ -33,15 +33,15 @@ const ProjectCard = ({
           />
         </div>
         <div className="md:w-1/2 p-2">
-          <div className="text-center font-bold text-3xl align-middle xl:p-4 xl:m-2 p-2 m-2">
+          <div className="text-center dark:text-[#EDF5E1] text-[#05386B] font-bold text-3xl align-middle xl:p-4 xl:m-2 p-2 m-2">
             {title}
           </div>
-          <div className=" text-xl align-middle xl:p-4 xl:m-5 p-2 m-2 text-justify">
+          <div className=" text-xl dark:text-[#EDF5E1] text-[#05386B] align-middle xl:p-4 xl:m-5 p-2 m-2 text-justify">
             {description}
           </div>
           <div class="flex flex-row items-center justify-center">
             <div class="w-full">
-              <div className="text-center font-bold text-xl">What I used</div>
+              <div className="text-center dark:text-[#EDF5E1] text-[#05386B] font-bold text-xl">What I used</div>
               <div className="flex justify-center text-center items-center p-3 m-2">
                 <div className="p-1 m-1 rounded-full bg-white">
                   <img
