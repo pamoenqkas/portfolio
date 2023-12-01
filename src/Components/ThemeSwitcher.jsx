@@ -27,13 +27,12 @@ const ThemeSwitcher = () => {
     }
 
     return(
-        <button
+        <button 
             onClick={handleThemeSwitcher}
-            className='p-3 m-3 bg-slate-50 dark:bg-slate-600 text-yellow-500 dark:text-white'
+            className='p-3 m-3 bg-[#EDF5E1] dark:bg-[#05386B] text-yellow-500 dark:text-white'
             >
             {theme === 'dark' ? <FaMoon /> : <BsSunFill />}
-        </button>
-
+        </button> 
     );
 };
 

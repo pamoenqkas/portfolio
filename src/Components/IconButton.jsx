@@ -1,6 +1,5 @@
 import { useRef } from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom"; // Impor Link dari react-router-dom
+import { useState } from "react";  // Impor Link dari react-router-dom
 
 export default function IconButton({ children, text, color, to, ...props }) {
   const [hovered, setHovered] = useState(false);
@@ -12,8 +11,8 @@ export default function IconButton({ children, text, color, to, ...props }) {
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         className={`
-          flex-col xl:flex-row p-3 m-2 xl:p-5 text-lg xl:text-xl items-center text-center align-middle rounded-lg 
-          text-white ${color || "bg-gray-600 dark:bg-gray-500"}
+          flex xl:flex p-3 m-2 xl:p-5 text-lg xl:text-xl items-center text-center align-middle rounded-lg 
+          text-white ${color || "bg-[#05386B]  "}
         `}
         {...props}
       >
