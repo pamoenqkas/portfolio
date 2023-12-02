@@ -127,7 +127,7 @@ const Main = () => {
                         </h1>
                         <div className="flex justify-center text-center items-center m-2 ">
                           <a
-                            href="https://drive.google.com/file/d/1kC72tENfD5ZsxXbG1wNs4OrBYITfMlj4/view"
+                            href="https://drive.google.com/file/d/1jomqspO0c1-_x0Af2ijGrJvp7YcaANgC/view"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
