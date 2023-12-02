@@ -18,11 +18,23 @@ const Main = () => {
         <div className="scroll-smooth focus:scroll-auto">
           <div className="bg-[#EDF5E1] sticky z-50 top-0 dark:bg-[#05161A] max-w-full p-5 border-b-2 border-[#05386B] dark:border-[#0C7075]">
             <div className="flex justify-between items-center space-x-4">
-              <img
-                src="./assets/icon-navbar.svg"
-                alt="Icon"
-                className="w-10 h-10"
-              ></img>
+              {/* untuk dark */}
+              <div className="ml-3">
+                <div className="hidden dark:block">
+                  <img
+                    src="./assets/Logo-dark.png"
+                    alt="Icon"
+                    className="xl:w-24 xl:h-20 w-12 h-12 hidden dark:block"
+                  ></img>
+                </div>
+                <div className="dark:hidden">
+                  <img
+                    src="./assets/Logo.png"
+                    alt="Icon"
+                    className="dark:hidden xl:w-24 xl:h-20 w-12 h-12 "
+                  ></img>
+                </div>
+              </div>
               <div className="bg-slate dark:bg-[#05161A] h-12 w-12 flex items-center justify-center rounded-full">
                 <ThemeSwitcher />
               </div>
@@ -34,17 +46,32 @@ const Main = () => {
             <div className="p-6 m-6 dark:from-black dark:to-slate-600 text-gray-200">
               <div className="flex items-center justify-center ">
                 <div className="md:w-2/3 ">
-                  <p className="text-lg text-[#05386B] dark:text-white m-2 mt-1 p-2 text-center">
+                  <p
+                    data-aos="fade-down"
+                    className="text-lg text-[#05386B] dark:text-white m-2 mt-1 p-2 text-center"
+                  >
                     G'day, I'm
                   </p>
-                  <p className="text-5xl font-bold dark:text-[#EDF5E1] text-[#05386B] m-2 p-2 text-center">
+                  <p
+                    data-aos="fade-right"
+                    data-aos-delay="600"
+                    className="text-5xl font-bold dark:text-[#EDF5E1] text-[#05386B] m-2 p-2 text-center"
+                  >
                     Wahyu Sutanto Pamungkas
                   </p>
-                  <p className="text-lg font-semibold text-[#05386B]  dark:text-[#EDF5E1] m-2 p-2 text-center">
+                  <p
+                    data-aos="fade-left"
+                    data-aos-delay="800"
+                    className="text-lg font-semibold text-[#05386B]  dark:text-[#EDF5E1] m-2 p-2 text-center"
+                  >
                     Web Developer
                   </p>
                   <div className="items-center">
-                    <p className="font-mono text-lg m-2 p-2 text-center text-[#05386B] dark:text-[#EDF5E1] xl:text-justify">
+                    <p
+                      data-aos="flip-up"
+                      data-aos-delay="1000"
+                      className="font-mono text-lg m-2 p-2 text-center text-[#05386B] dark:text-[#EDF5E1] xl:text-justify"
+                    >
                       I'm an Informatics at Atma Jaya Yogyakarta University with
                       a high interest learner and ambitious. Currently learning
                       and exploring Web Development. Experienced in managing
@@ -57,7 +84,11 @@ const Main = () => {
                   </div>
                   <div>
                     <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-between items-center">
-                      <div className="md:w-1/2">
+                      <div
+                        data-aos="fade-up-right"
+                        data-aos-delay="200 xl:delay-1200"
+                        className="md:w-1/2"
+                      >
                         <h1 className="text-lg font-mono dark:text-[#EDF5E1] text-[#05386B] font-medium text-center mt-4 xl:text-xl">
                           My Social Media
                         </h1>
@@ -86,7 +117,11 @@ const Main = () => {
                           </a>
                         </div>
                       </div>
-                      <div className="md:w-3/4">
+                      <div
+                        data-aos="fade-up-left"
+                        data-aos-delay="200 xl:delay-1200"
+                        className="md:w-3/4"
+                      >
                         <h1 className="text-lg font-mono dark:text-[#EDF5E1] text-[#05386B] font-medium text-center mt-4 xl:text-xl">
                           My Portfolio
                         </h1>
@@ -116,7 +151,11 @@ const Main = () => {
                       </div>
                     </div> */}
                   {/* Tengah */}
-                  <div className="bg-transparent dark:bg-transparent dark:bg-slate-600 flex-grow flex justify-center items-center  lg:w-48">
+                  <div
+                    data-aos="fade-left"
+                    data-aos-delay="1600"
+                    className="bg-transparent dark:bg-transparent dark:bg-slate-600 flex-grow flex justify-center items-center  lg:w-48"
+                  >
                     <div className="flex flex-col">
                       <div className="px-2 py-2 mx-2 my-4 bg-gradient-to-br from-[#05386B] to-[#379683] dark:bg-gradient-to-br dark:from-[#379683] dark:to-[#5CDB95] rounded-full md:w-auto h-auto justify-center">
                         <div className="rounded-full w-50 h-50 overflow-hidden bg-gradient-to-l from-[#EDF5E1] to-[#379683] dark:from-[#072E33] dark:to-[#0C7075]  ">
@@ -147,20 +186,36 @@ const Main = () => {
 
         {/* nav */}
       </section>
-      <div className="pt-3 pb-2 bg-[#EDF5E1] dark:bg-[#05161A]">
-        <div className="max-w-2xl xl:max-w-6xl flex items-center justify-center mx-6 mt-3 mb-3 xl:mx-auto xl:h-auto bg-[#8EE4AF] dark:bg-gradient-to-r dark:bg-[#072E33] ">
+      <div className="pt-3 pb-2 bg-[#EDF5E1] dark:bg-[#05161A]"> 
+        <div
+          data-aos="flip-up"
+          data-aos-delay=""
+          className="max-w-2xl xl:max-w-6xl flex items-center justify-center mx-6 mt-3 mb-3 xl:mx-auto xl:h-auto bg-[#8EE4AF] dark:bg-gradient-to-r dark:bg-[#072E33] "
+        >
           <div className="flex items-center justify-center pr-2">
             {/* Left Element */}
-            <span className="w-6 h-6 dark:bg-[#8EE4AF] bg-[#072E33] rounded-full"></span>
+            <span
+              data-aos="fade-right"
+              data-aos-delay="200"
+              className="w-6 h-6 dark:bg-[#8EE4AF] bg-[#072E33] rounded-full"
+            ></span>
           </div>
-          <h1 className="text-lg font-mono dark:text-[#EDF5E1] text-[#05386B] font-medium text-center p-2 xl:text-2xl">
+          <h1
+            data-aos="flip-up"
+            data-aos-delay="1000"
+            className="text-lg font-mono dark:text-[#EDF5E1] text-[#05386B] font-medium text-center p-2 xl:text-2xl"
+          >
             My Project
           </h1>
           <div className="flex items-center justify-center pl-2">
             {/* Right Element */}
-            <span className="w-6 h-6 dark:bg-[#8EE4AF] bg-[#072E33] rounded-full"></span>
+            <span
+              data-aos="fade-left"
+              data-aos-delay="600"
+              className="w-6 h-6 dark:bg-[#8EE4AF] bg-[#072E33] rounded-full"
+            ></span>
           </div>
-        </div> 
+        </div>
         <ProjectCard
           title="Go-Fit"
           isDisabled={false}
