@@ -23,7 +23,7 @@ const ProjectCard = ({
     // <div class="flex items-center justify-center h-screen">
     // <div class="w-1/2 bg-blue-500 p-4">
     // <div className="max-w-2xl  xl:max-w-6xl flex items-center justify-center mx-6 mt-3 mb-3 bg-slate-500"> 
-    <div  data-aos="flip-up" data-aos-delay="400 xl:1100" className="max-w-2xl xl:max-w-6xl flex items-center justify-center mx-6 xl:mx-auto xl:h-auto rounded-2xl bg-[#8EE4AF] dark:bg-[#072E33] m-5  ">
+    <div  data-aos="flip-up" data-aos-delay="400 xl:1100" className="shadow-lg shadow-[#05161A] dark:shadow-lg dark:shadow-[#8EE4AF] max-w-2xl xl:max-w-6xl flex items-center justify-center mx-6 xl:mx-auto xl:h-auto rounded-2xl bg-[#8EE4AF] dark:bg-[#072E33] m-5  ">
       <div className="flex flex-col md:flex-row ">
         <div data-aos="fade-left" data-aos-delay="1200 xl:1300" className="md:w-2/3 flex items-center justify-center">
           <img

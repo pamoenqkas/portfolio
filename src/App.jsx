@@ -59,6 +59,23 @@ const Main = () => {
                   >
                     Wahyu Sutanto Pamungkas
                   </p>
+                  <div
+                    data-aos="fade-left"
+                    data-aos-delay="700"
+                    className="xl:hidden"
+                  >
+                    <div className="px-2 py-2 mx-2 my-4 bg-gradient-to-br from-[#05386B] to-[#379683] dark:bg-gradient-to-br dark:from-[#379683] dark:to-[#5CDB95] rounded-full md:w-auto h-auto justify-center">
+                      <div className="rounded-full w-50 h-50 lg:h-30 lg:w-30 overflow-hidden bg-gradient-to-l from-[#EDF5E1] to-[#379683] dark:from-[#072E33] dark:to-[#0C7075]  ">
+                        <div className="flex justify-center">
+                          <img
+                            src="./assets/wsp.png"
+                            alt="Your Image Alt Text"
+                            className="w-100 h-100 rounded-full overflow-hidden"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <p
                     data-aos="fade-left"
                     data-aos-delay="800"
@@ -186,58 +203,60 @@ const Main = () => {
 
         {/* nav */}
       </section>
-      <div className="pt-3 pb-2 bg-[#EDF5E1] dark:bg-[#05161A]"> 
-        <div
-          data-aos="flip-up"
-          data-aos-delay=""
-          className="max-w-2xl xl:max-w-6xl flex items-center justify-center mx-6 mt-3 mb-3 xl:mx-auto xl:h-auto bg-[#8EE4AF] dark:bg-gradient-to-r dark:bg-[#072E33] "
-        >
-          <div className="flex items-center justify-center pr-2">
-            {/* Left Element */}
-            <span
-              data-aos="fade-right"
-              data-aos-delay="200"
-              className="w-6 h-6 dark:bg-[#8EE4AF] bg-[#072E33] rounded-full"
-            ></span>
-          </div>
-          <h1
+      <div className="flex flex-col lg:items-center lg:justify-center">
+        <div className="pt-3 pb-2 bg-[#EDF5E1] dark:bg-[#05161A]">
+          <div
             data-aos="flip-up"
-            data-aos-delay="1000"
-            className="text-lg font-mono dark:text-[#EDF5E1] text-[#05386B] font-medium text-center p-2 xl:text-2xl"
+            data-aos-delay=""
+            className="shadow-md shadow-[#05161A] dark:shadow-md dark:shadow-[#8EE4AF]  max-w-2xl xl:max-w-6xl flex items-center justify-center mx-6 mt-3 mb-3 xl:mx-auto xl:h-auto bg-[#8EE4AF] dark:bg-gradient-to-r dark:bg-[#072E33] "
           >
-            My Project
-          </h1>
-          <div className="flex items-center justify-center pl-2">
-            {/* Right Element */}
-            <span
-              data-aos="fade-left"
-              data-aos-delay="600"
-              className="w-6 h-6 dark:bg-[#8EE4AF] bg-[#072E33] rounded-full"
-            ></span>
+            <div className="flex items-center justify-center pr-2">
+              {/* Left Element */}
+              <span
+                data-aos="fade-right"
+                data-aos-delay="200"
+                className="w-6 h-6 dark:bg-[#8EE4AF] bg-[#072E33] rounded-full"
+              ></span>
+            </div>
+            <h1
+              data-aos="flip-up"
+              data-aos-delay="1000"
+              className="text-lg font-mono dark:text-[#EDF5E1] text-[#05386B] font-medium text-center p-2 xl:text-2xl"
+            >
+              My Project
+            </h1>
+            <div className="flex items-center justify-center pl-2">
+              {/* Right Element */}
+              <span
+                data-aos="fade-left"
+                data-aos-delay="600"
+                className="w-6 h-6 dark:bg-[#8EE4AF] bg-[#072E33] rounded-full"
+              ></span>
+            </div>
           </div>
-        </div>
-        <ProjectCard
-          title="Go-Fit"
-          isDisabled={false}
-          imageSrc="./assets/project/GO-fit.png"
-          titleButton="Gofit"
-          description="GoFit is a fitness center support application that can be accessed easily via the website.This website was developed
+          <ProjectCard
+            title="Go-Fit"
+            isDisabled={false}
+            imageSrc="./assets/project/GO-fit.png"
+            titleButton="Gofit"
+            description="GoFit is a fitness center support application that can be accessed easily via the website.This website was developed
         using Laravel 9 for the back-end, Vue 3 for the front-end, and incorporates the Bootstrap library for a responsive design.  "
-          Image1="./assets/project/Laravel.png"
-          Image2="./assets/project/Vue.png"
-          Image3="./assets/project/postman.png"
-          Image4="./assets/project/phpmyadminlogo.png"
-        />
-        <ProjectCard
-          title="SIATMA for University Workforce"
-          isDisabled={true}
-          titleButton="Private Repository"
-          imageSrc="./assets/project/Siatma.png"
-          description="SIATMA (Sistem Informasi Atma Jaya Yogyakarta) used by university workforce such as admins 
+            Image1="./assets/project/Laravel.png"
+            Image2="./assets/project/Vue.png"
+            Image3="./assets/project/postman.png"
+            Image4="./assets/project/phpmyadminlogo.png"
+          />
+          <ProjectCard
+            title="SIATMA for University Workforce"
+            isDisabled={true}
+            titleButton="Private Repository"
+            imageSrc="./assets/project/Siatma.png"
+            description="SIATMA (Sistem Informasi Atma Jaya Yogyakarta) used by university workforce such as admins 
                       of Information Systems Offices, Study Programs, Lecture Administration and Examination Administration using ASP.NET 6 CORE MVCs."
-          Image1="./assets/project/csharp.png"
-          Image2="./assets/project/mssql.png"
-        />
+            Image1="./assets/project/csharp.png"
+            Image2="./assets/project/mssql.png"
+          />
+        </div>
       </div>
       {/* <EmailForm /> */}
     </>
