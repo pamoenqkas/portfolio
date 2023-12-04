@@ -39,23 +39,23 @@ export const EmailForm = () => {
 
   return (
     <section>
-      <div className=" bg-slate-50 dark:bg-slate-600 flex flex-col-reverse md:flex-row">
-        <div className=" pt-4 pb-4">
+          <div  data-aos="flip-up" data-aos-delay="400 xl:1100" className="shadow-lg shadow-[#05161A] dark:shadow-lg dark:shadow-[#8EE4AF] max-w-2xl xl:max-w-6xl flex items-center justify-center mx-6 xl:mx-auto xl:h-auto rounded-2xl bg-[#8EE4AF] dark:bg-[#072E33] m-5  ">
+      {/* <div className=" bg-slate-50 dark:bg-slate-600 flex flex-col-reverse md:flex-row"> */}
           <div className="container bg-gradient-to-bl from-[#EDF5E1] to-[#8EE4AF] dark:from-black dark:to-slate-600 xl:rounded-bl-3xl rounded-bl-3xl rounded-tr-3xl pt-4 max-w-full">
             <div className="m-4">
               <h1 className="font-bold text-2xl pt-4 text-center text-gray-600 dark:text-gray-400 xl:text-center">
                 Contact Me
               </h1>
-              <div className="flex flex-wrap">
-                <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
+              <div className="flex flex-col">
+                <div className="w-full p-4">
                   {/* kiri */}
-                  <p className="font-mono text-lg mb-1 mx-4 p-4 text-justify text-slate-800 dark:text-gray-400 xl:text-justify">
+                  <p className="font-mono text-lg mb-1 mx-4 p-4 text-center text-slate-800 dark:text-gray-400 xl:text-center">
                     I really enjoy communicating and sharing information. If you
                     have any questions, requests, or want to discuss the
                     project, do not hesitate to contact me via one of the social
                     media listed
                   </p>
-                  <p className="font-mono text-lg mb-2 my-1 mx-4 p-4 text-justify text-slate-800 dark:text-gray-400 xl:text-justify">
+                  <p className="font-mono text-lg mb-2 my-1 mx-4 p-4 text-center text-slate-800 dark:text-gray-400 xl:text-center">
                     Thank you for your interest and I hope to hear from you
                     soon!
                   </p>
@@ -157,7 +157,6 @@ export const EmailForm = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };

@@ -65,7 +65,7 @@
     
     /* Dark Mode */
     :root {
-      --bg-dark: #072E33;
+      --bg-dark: #05161A;
     }
     
     body.dark-mode {
