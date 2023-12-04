@@ -203,7 +203,7 @@ const Main = () => {
 
         {/* nav */}
       </section>
-      <div className="flex flex-col lg:items-center lg:justify-center">
+      <div className="flex flex-col lg:items-center lg:justify-center bg-[#EDF5E1] dark:bg-[#05161A]">
         <div className="pt-3 pb-2 bg-[#EDF5E1] dark:bg-[#05161A]">
           <div
             data-aos="flip-up"
