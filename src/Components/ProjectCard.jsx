@@ -65,7 +65,7 @@ const ProjectCard = ({
                     alt={`${title} Image`}
                     className="w-10 h-10 xl:w-16 xl:h-16 p-1 m-1"
                   />
-                  <span className="absolute font-bold text-black text-lg inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span className="absolute font-extrabold text-[#05386B] text-base inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
                     {hoverText1}
                   </span>
                 </div>
@@ -75,7 +75,7 @@ const ProjectCard = ({
                     alt={`${title} Image`}
                     className="w-10 h-10 xl:w-16 xl:h-16 p-1 m-1"
                   />
-                  <span className="absolute font-bold text-black text-lg inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span className="absolute font-extrabold text-[#05386B] text-xs lg:text-sm inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
                     {hoverText2}
                   </span>
                 </div>

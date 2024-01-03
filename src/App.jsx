@@ -6,10 +6,11 @@ import EmailForm from "./Components/EmailForm";
 import ProjectCard from "./Components/ProjectCard";
 
 import React from "react";
-import { GitHub, Linkedin, Grid, Instagram, Mail } from "react-feather";
+import { GitHub, Linkedin, Grid, Instagram, Mail, File} from "react-feather";
 
 import ThemeSwitcher from "./Components/ThemeSwitcher";
 import IconButton from "./Components/IconButton";
+import { Route, Routes } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -17,7 +18,7 @@ const Main = () => {
       <div className="scroll-smooth focus:scroll-auto dark:bg-[#05161A] bg-[#EDF5E1]">
         <section>
           <div className="w-full flex items-center justify-center">
-            <div className="bg-[#EDF5E1] fixed z-20 w-10/12 md:w-2/3 lg:w-2/5 xl:w-full rounded-b-3xl xl:rounded-none top-0 dark:bg-[#05161A] max-w-full p-3 border-b-2 border-[#05386B] dark:border-[#0C7075]">
+            <div className="bg-[#EDF5E1] fixed z-20 w-10/12 md:w-2/3 lg:w-2/5 xl:w-full rounded-b-3xl xl:rounded-none top-0 dark:bg-[#05161A] max-w-full p-3 xl:p-1 border-b-2 border-[#05386B] dark:border-[#0C7075]">
               <div className="flex justify-between items-center space-x-4">
                 {/* untuk dark */}
                 <div className="ml-3">
@@ -71,7 +72,7 @@ const Main = () => {
                   >
                     {/* <div className="px-2 py-2 mx-2 my-4 bg-gradient-to-t from-[#05386B] to-[#379683] dark:bg-gradient-to-br dark:from-[#379683] dark:to-[#5CDB95] rounded-full xl:w-auto w-auto h-auto justify-center">
                       <div className="rounded-full w-50 h-50 lg:h-30 lg:w-30 overflow-hidden bg-gradient-to-b from-[#EDF5E1] to-[#379683] dark:from-[#072E33] dark:to-[#0C7075]  "> */}
-                    <div className="bg-gradient-to-b from-[#EDF5E1] to-[#5CDB95] dark:from-[#05386B] dark:to-[#379683] rounded-full w-1/2  ">
+                    <div className="mt-3 bg-gradient-to-b from-[#EDF5E1] to-[#5CDB95] dark:from-[#05386B] dark:to-[#379683] rounded-full w-1/2  ">
                       <div className="flex justify-center  ">
                         <img
                           src="./assets/wsp.png"
@@ -96,14 +97,14 @@ const Main = () => {
                       data-aos-delay="1000"
                       className="font-mono text-lg m-2 p-2 text-center text-[#05386B] dark:text-[#EDF5E1] xl:text-center"
                     >
-                      I'm an Informatics at Atma Jaya Yogyakarta University with
-                      a high interest learner and ambitious. Currently learning
-                      and exploring Web Development. Experienced in managing
-                      organizational members and ensuring all members carry out
-                      tasks according to the division that has been given in
-                      order to achieve the organization's vision and mission by
-                      became vice-chairman for Himpunan Mahasiswa Informatika
-                      UAJY.
+                      I'm an Informatics Student at Atma Jaya Yogyakarta
+                      University with a high interest learner and ambitious.
+                      Currently learning and exploring Web Development.
+                      Experienced in managing organizational members and
+                      ensuring all members carry out tasks according to the
+                      division that has been given in order to achieve the
+                      organization's vision and mission by became vice-chairman
+                      for Himpunan Mahasiswa Informatika UAJY.
                     </p>
                   </div>
                   <div>
@@ -162,8 +163,20 @@ const Main = () => {
                               <Grid size={20} />
                             </IconButton>
                           </a>
+                          <a
+                            href="https://drive.google.com/file/d/1CCYFrNFdY7lUSR3rWjW0mnBAjXSjfN0y/view"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <IconButton
+                              text="Portfolio"
+                              color="  bg-[#8EE4AF] text-black dark:text-black "
+                            >
+                              <File size={20} />
+                            </IconButton>
+                          </a>
                         </div>
-                      </div>{" "}
+                      </div>
                       {/* container */}
                     </div>
                   </div>
@@ -252,6 +265,7 @@ const Main = () => {
               Image2="./assets/project/Vue.png"
               hoverText1="Laravel"
               hoverText2="Vue"
+              id="1"
             />
             <ProjectCard
               title="SIATMA for University Workforce"
@@ -264,10 +278,25 @@ const Main = () => {
               Image2="./assets/project/mssql.png"
               hoverText1="C#"
               hoverText2="MSSQL"
+              id="2"
+            />
+            <ProjectCard
+              title="Product Provider Website"
+              isDisabled={true}
+              titleButton="Private Repository"
+              imageSrc="./assets/project/product.png"
+              description="This project focuses on providing products. There are 2 roles, namely admin and user. 
+              Admin can perform CRUD actions on a product and users can view product details. This project exists for the purpose of taking tests and adding to the portfolio"
+              Image1="./assets/project/Laravel.png"
+              Image2="./assets/project/tailwindcss-logo.jpg"
+              hoverText1="Laravel"
+              hoverText2="Tailwind.css"
+              id="2"
             />
           </div>
         </div>
       </section>
+
       <section id="contact-me">{/* <EmailForm /> */}</section>
       {/* <section id="footer">
         <div className="mt-20 bg-white border border-stone-800 w-full">
