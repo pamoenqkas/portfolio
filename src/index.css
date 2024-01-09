@@ -4,6 +4,7 @@
 
   html, body {
     scroll-behavior: smooth;
+    position: relative; 
   }
 
   /* Tailwind CSS utility classes */
@@ -71,3 +72,34 @@
     body.dark-mode {
       background-color: var(--bg-dark);
     }
+
+    /* .swiper {
+      width: 700px;
+      height: 620px;
+    } */
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }    
+    
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1rem; /* 16px */
+    }   
+    
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 600px;
+      object-fit: cover;  
+    }
+ 
+    

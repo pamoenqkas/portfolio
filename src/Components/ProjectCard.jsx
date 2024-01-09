@@ -1,18 +1,27 @@
 import React from "react";
 import IconButton from "./IconButton";
 import { GitHub, Lock } from "react-feather";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
 const ProjectCard = ({
   title,
   titleButton,
-  imageSrc,
+  imageSrc1,
+  imageSrc2,
+  imageSrc3, 
   description,
   Image1,
   Image2,
   hoverText1,
   hoverText2,
   isDisabled,
-}) => { 
-
+}) => {
   return (
     // <div class="flex items-center justify-center h-screen">
     // <div class="w-1/2 bg-blue-500 p-4">
@@ -20,20 +29,45 @@ const ProjectCard = ({
     <div
       data-aos="flip-up"
       data-aos-delay="400 xl:1100"
-      className="mt-6 shadow-lg shadow-[#05161A] dark:shadow-lg dark:shadow-[#05386B] max-w-2xl xl:max-w-6xl flex items-center justify-center mx-6 xl:mx-auto xl:h-auto rounded-2xl bg-[#8EE4AF] dark:bg-[#072E33] m-5  "
+      className="mt-6 shadow-lg shadow-[#05161A] dark:shadow-lg dark:shadow-[#05386B] max-w-2xl xl:max-w-6xl 
+        flex items-center justify-center mx-6 xl:mx-auto xl:h-auto rounded-2xl bg-[#8EE4AF] dark:bg-[#072E33] m-5  "
     >
-      <div className="flex flex-col md:flex-row ">
+      <div className="flex items-center justify-center flex-col md:flex-row w-full ">
         <div
           data-aos="fade-left"
           data-aos-delay="1200 xl:1300"
-          className="md:w-2/3 flex items-center justify-center"
+          className="md:w-2/3 w-full flex items-center justify-center "
         >
-          <img
+          {/* <img
             src={imageSrc}
             alt={`${title} Image`}
             className="w-full h-full rounded-t-2xl xl:rounded-bl-2xl xl:rounded-tr-none "
-          />
-        </div>
+          /> */} 
+            <Swiper
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay, Pagination, Navigation]}
+            >
+              <SwiperSlide>
+                <img
+                  src={imageSrc1}
+                  alt={`${title} Image`}
+                  className="rounded-t-2xl lg:rounded-l-2xl  "
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={imageSrc2}
+                  alt={`${title} Image`}
+                  className="rounded-t-2xl lg:rounded-l-2xl  "
+                />
+              </SwiperSlide> 
+            </Swiper>
+          </div> 
         <div className="md:w-1/2 p-2">
           <div
             data-aos="fade-down-left"

@@ -257,7 +257,8 @@ const Main = () => {
             <ProjectCard
               title="Go-Fit"
               isDisabled={false}
-              imageSrc="./assets/project/GO-fit.png"
+              imageSrc1="./assets/project/gofit-1.png" 
+              imageSrc2="./assets/project/gofit-2.png" 
               titleButton="Gofit"
               description="GoFit is a fitness center support application that can be accessed easily via the website.This website was developed
         using Laravel 9 for the back-end, Vue 3 for the front-end, and incorporates the Bootstrap library for a responsive design.  "
@@ -271,7 +272,8 @@ const Main = () => {
               title="SIATMA for University Workforce"
               isDisabled={true}
               titleButton="Private Repository"
-              imageSrc="./assets/project/Siatma.png"
+              imageSrc1="./assets/project/ksi-1.png" 
+              imageSrc2="./assets/project/ksi-2.png" 
               description="SIATMA (Sistem Informasi Atma Jaya Yogyakarta) used by university workforce such as admins 
                       of Information Systems Offices, Study Programs, Lecture Administration and Examination Administration using ASP.NET 6 CORE MVCs."
               Image1="./assets/project/csharp.png"
@@ -284,7 +286,8 @@ const Main = () => {
               title="Product Provider Website"
               isDisabled={true}
               titleButton="Private Repository"
-              imageSrc="./assets/project/product.png"
+              imageSrc1="./assets/project/produk-1.png" 
+              imageSrc2="./assets/project/produk-2.png" 
               description="This project focuses on providing products. There are 2 roles, namely admin and user. 
               Admin can perform CRUD actions on a product and users can view product details. This project exists for the purpose of taking tests and adding to the portfolio"
               Image1="./assets/project/Laravel.png"
