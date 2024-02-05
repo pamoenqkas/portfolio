@@ -13,7 +13,6 @@ import ThemeSwitcher from "./Components/ThemeSwitcher";
 import IconButton from "./Components/IconButton";
 import { Route, Routes } from "react-router-dom";
 import Slides from "./Components/Slides";
-import Star from "../public/icon/star";
 import Modal from "./Components/Modal";
 
 import { TypeAnimation } from "react-type-animation";
