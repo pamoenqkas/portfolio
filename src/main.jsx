@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import {NextUIProvider} from '@nextui-org/react'
 import App from './App.jsx';
 import 'aos/dist/aos.css'; // Import AOS styles
 import AOS from 'aos'; // Import AOS library
@@ -9,9 +10,9 @@ import './index.css';
 AOS.init(); // Initialize AOS
 
 ReactDOM.render(
-  <BrowserRouter>
+  <NextUIProvider>
     <App />
-  </BrowserRouter>,
+  </NextUIProvider>,
   document.getElementById('root')
 );
 

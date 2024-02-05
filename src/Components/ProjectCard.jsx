@@ -14,7 +14,9 @@ const ProjectCard = ({
   titleButton,
   imageSrc1,
   imageSrc2,
-  imageSrc3, 
+  imageSrc3,
+  imageSrc4,
+  imageSrc5,
   description,
   Image1,
   Image2,
@@ -27,48 +29,67 @@ const ProjectCard = ({
     // <div class="w-1/2 bg-blue-500 p-4">
     // <div className="max-w-2xl  xl:max-w-6xl flex items-center justify-center mx-6 mt-3 mb-3 bg-slate-500">
     <div
-      data-aos="flip-up"
-      data-aos-delay="400 xl:1100"
-      className="mt-6 shadow-lg shadow-[#05161A] dark:shadow-lg dark:shadow-[#05386B] max-w-2xl xl:max-w-6xl 
-        flex items-center justify-center mx-6 xl:mx-auto xl:h-auto rounded-2xl bg-[#8EE4AF] dark:bg-[#072E33] m-5  "
+      // data-aos="flip-up"
+      // data-aos-delay="400 xl:1100"
+      className="shadow-lg shadow-[#05161A] dark:shadow-lg dark:shadow-[#05386B] max-w-2xl xl:max-w-6xl 
+        flex items-center justify-center dark:bg-[#072E33] mb-5  "
     >
-      <div className="flex items-center justify-center flex-col md:flex-row w-full ">
+      <div className="flex items-center justify-center flex-row md:flex-col w-screen ">
         <div
           data-aos="fade-left"
           data-aos-delay="1200 xl:1300"
           className="md:w-2/3 w-full flex items-center justify-center "
         >
-          {/* <img
-            src={imageSrc}
-            alt={`${title} Image`}
-            className="w-full h-full rounded-t-2xl xl:rounded-bl-2xl xl:rounded-tr-none "
-          /> */} 
-            <Swiper
-              spaceBetween={30}
-              centeredSlides={true}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              modules={[Autoplay, Pagination, Navigation]}
-            >
-              <SwiperSlide>
-                <img
-                  src={imageSrc1}
-                  alt={`${title} Image`}
-                  className="rounded-t-2xl lg:rounded-l-2xl  "
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src={imageSrc2}
-                  alt={`${title} Image`}
-                  className="rounded-t-2xl lg:rounded-l-2xl  "
-                />
-              </SwiperSlide> 
-            </Swiper>
-          </div> 
-        <div className="md:w-1/2 p-2">
+          <Swiper
+            slidesPerView={2}
+            spaceBetween={20}
+            pagination={{
+              clickable: true,
+            }}
+            className="mySwiper"
+            centeredSlides={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            grabCursor={true}
+            modules={[Autoplay, Pagination, Navigation]}
+          >
+            <SwiperSlide>
+              <img
+                src={imageSrc1}
+                alt={`${title} Image`}
+                className=" w-full h-full "
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={imageSrc2} alt={`${title} Image`} className="  " />
+            </SwiperSlide>
+            {/* <SwiperSlide>
+              <img
+                src={imageSrc3}
+                alt={`${title} Image`}
+                className="rounded-t-2xl lg:rounded-l-2xl  "
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={imageSrc4}
+                alt={`${title} Image`}
+                className="rounded-t-2xl lg:rounded-l-2xl  "
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={imageSrc5}
+                alt={`${title} Image`}
+                className="rounded-t-2xl lg:rounded-l-2xl  "
+              />
+            </SwiperSlide> */}
+          </Swiper>
+        </div>
+        <p>alskdjljsd </p>
+        {/* <div className="md:w-1/2 p-2">
           <div
             data-aos="fade-down-left"
             data-aos-delay="800 xl:1500"
@@ -116,7 +137,7 @@ const ProjectCard = ({
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
