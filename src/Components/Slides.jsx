@@ -64,7 +64,7 @@ const Slides = () => {
                     </div>
                   </div>
                   <img
-                    src="./assets/go-fit.png"
+                    src="./assets/go-fit.png?url"
                     alt="..."
                     className="w-100 h-80 overflow-hidden"
                   />
@@ -145,7 +145,7 @@ const Slides = () => {
                     </div>
                   </div>
                   <img
-                    src="./assets/siatma.png"
+                    src="./assets/siatma.png?url"
                     alt="..."
                     className="w-100 h-80 overflow-hidden"
                   />
@@ -222,7 +222,7 @@ const Slides = () => {
                     </div>
                   </div>
                   <img
-                    src="./assets/product.png"
+                    src="./assets/product.png?url"
                     alt="..."
                     className="w-100 h-80 overflow-hidden"
                   />
@@ -296,7 +296,7 @@ const Slides = () => {
                     </div>
                   </div>
                   <img
-                    src="./assets/manganime.png"
+                    src="./assets/manganime.png?url"
                     alt="..."
                     className="w-100 h-80 overflow-hidden"
                   />
