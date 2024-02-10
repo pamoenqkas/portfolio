@@ -62,7 +62,7 @@ const Main = () => {
         {/* bg-gradient-to-b from-[#EDF5E1] to-[#8EE4AF] */}
         <section>
           {/* <div className="mt-16 dark:bg-[#072E33] p-6 max-w-full"> */}
-          <div class="xl:mt-24 mt-20 flex flex-col md:items-center md:justify-center bg-white dark:bg-black">
+          <div className="xl:mt-24 mt-20 flex flex-col md:items-center md:justify-center bg-white dark:bg-black">
             <div className="container dark:from-black dark:to-slate-600 text-gray-200">
               <div className="flex flex-col items-center justify-center ">
                 <div className="border-2 border-black bg-black dark:bg-white w-8/12 h-auto my-6 ">
@@ -196,7 +196,7 @@ const Main = () => {
                       <div className="flex xl:flex-row xl:flex flex-col w-full h-full ">
                         <div className="w-full flex-row">
                           <div className="relative">
-                            <div class="absolute xl:top-1/2 -top-3 xl:left-1/2 transform xl:-translate-x-1/2 xl:-translate-y-1/2 mt-3">
+                            <div className="absolute xl:top-1/2 -top-3 xl:left-1/2 transform xl:-translate-x-1/2 xl:-translate-y-1/2 mt-3">
                               <span className="text-3xl text-black dark:text-white font-semibold ">
                                 Front-end
                               </span>
@@ -261,7 +261,7 @@ const Main = () => {
                         </div>
                         <div className="w-full flex-row">
                           <div className="relative">
-                            <div class="absolute -bottom-52  xl:-bottom-12 xl:left-1/2 transform xl:-translate-x-1/2 xl:-translate-y-1/2 mt-3">
+                            <div className="absolute -bottom-52  xl:-bottom-12 xl:left-1/2 transform xl:-translate-x-1/2 xl:-translate-y-1/2 mt-3">
                               <span className="text-3xl text-black dark:text-white font-semibold ">
                                 Back-end
                               </span>

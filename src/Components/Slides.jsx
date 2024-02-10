@@ -6,6 +6,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+import gofit from "/assets/go-fit.png?url"
+import siatma from "/assets/siatma.png?url"
+import manganime from "/assets/manganime.png?url"
+import product from "/assets/product.png?url"
+
 import { Button } from "@nextui-org/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import ModalPopup from "./Modal";
@@ -64,7 +69,7 @@ const Slides = () => {
                     </div>
                   </div>
                   <img
-                    src="./assets/go-fit.png?url"
+                    src={gofit}
                     alt="..."
                     className="w-100 h-80 overflow-hidden"
                   />
@@ -145,7 +150,7 @@ const Slides = () => {
                     </div>
                   </div>
                   <img
-                    src="./assets/siatma.png?url"
+                    src={siatma}
                     alt="..."
                     className="w-100 h-80 overflow-hidden"
                   />
@@ -222,7 +227,7 @@ const Slides = () => {
                     </div>
                   </div>
                   <img
-                    src="./assets/product.png?url"
+                    src={product}
                     alt="..."
                     className="w-100 h-80 overflow-hidden"
                   />
@@ -296,7 +301,7 @@ const Slides = () => {
                     </div>
                   </div>
                   <img
-                    src="./assets/manganime.png?url"
+                    src={manganime}
                     alt="..."
                     className="w-100 h-80 overflow-hidden"
                   />
