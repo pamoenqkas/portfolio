@@ -21,7 +21,7 @@ const Slides = () => {
           </p>
         </div>
         <div className="bg-white dark:bg-black w-full h-auto flex items-center justify-center ">
-          <div className="md:w-11/12 w-full ">
+          <div className="md:w-11/12 w-full h-full ">
             <Swiper
               breakpoints={{
                 340: {
@@ -47,7 +47,7 @@ const Slides = () => {
               }}
             >
               <SwiperSlide>
-                <div className="bg-white dark:bg-black w-full h-auto border-4 border-black dark:border-white mb-2 dark:mb-2 dark:shadow-[10px_10px_0px_0px_rgba(255,255,255)] shadow-[10px_10px_0px_0px_rgba(0,0,0)]">
+                <div className="bg-white dark:bg-black w-full h-auto border-2 border-black dark:border-white mb-2 dark:mb-2 dark:shadow-[10px_10px_0px_0px_rgba(255,255,255)] shadow-[10px_10px_0px_0px_rgba(0,0,0)]">
                   <div className="bg-white border-b-4 border-black dark:bg-black dark:border-white flex ">
                     <div className="w-auto flex">
                       <div className="flex ml-5 md:ml-2 justify-start items-center gap-2">
@@ -73,12 +73,12 @@ const Slides = () => {
                       <p className="text-black dark:text-white text-start text-3xl font-semibold ">
                         About
                       </p>
-                      <p className="text-black dark:text-white text-start text-2xl mt-4 line-clamp-3 ">
+                      <p className="text-black dark:text-white text-justify text-2xl mt-4 line-clamp-3 ">
                         GoFit merupakan aplikasi pendukung pusat kebugaran yang
                         dapat diakses dengan mudah melalui website. Website ini
                         dikembangkan menggunakan Laravel 9 untuk back-end, Vue 3
-                        untuk front-end, dan menggabungkan library
-                        Bootstrap untuk desain responsif.
+                        untuk front-end, dan menggabungkan library Bootstrap
+                        untuk desain responsif.
                       </p>
                     </div>
                     <div className="flex justify-between text-center items-center gap-2 mt-7">
@@ -104,10 +104,21 @@ const Slides = () => {
                         <ModalPopup
                           title="Go-Fit"
                           projectImage=""
-                          description=""
-                          language1=""
-                          avatar1=""
-                          language2=""
+                          description="GoFit merupakan aplikasi pendukung pusat kebugaran yang
+                          beroperasi pada platform Android dan dapat diakses
+                          dengan mudah melalui website. Sistem ini mengimplementasikan arsitektur client-server
+                          dan tersedia di website dan platform mobile. Untuk
+                          pengelolaan website digunakan oleh tenaga kerja pusat
+                          kebugaran untuk melakukan pengaturan jadwal harian, aktivasi member, dan lain-lain. 
+                          Pengelolaan platform mobile digunakan oleh
+                          member untuk melakukan transaksi deposit, booking,
+                          menjadi member, dan lain-lain. Website ini dikembangkan
+                          menggunakan Laravel 9 untuk back-end, Vue 3 untuk
+                          front-end, dan menggabungkan perpustakaan Bootstrap
+                          untuk desain responsif. Selain itu, aplikasi Android
+                          dibuat menggunakan Flutter."
+                          contributor1="Tanto"
+                          avatar1="./assets/wsp.png"
                           avatar2=""
                           id="1"
                         />
@@ -117,7 +128,7 @@ const Slides = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="bg-white dark:bg-black w-full h-auto border-4 border-black dark:border-white mb-2 dark:mb-2 dark:shadow-[10px_10px_0px_0px_rgba(255,255,255)] shadow-[10px_10px_0px_0px_rgba(0,0,0)]">
+                <div className="bg-white dark:bg-black w-full h-auto border-2 border-black dark:border-white mb-2 dark:mb-2 dark:shadow-[10px_10px_0px_0px_rgba(255,255,255)] shadow-[10px_10px_0px_0px_rgba(0,0,0)]">
                   <div className="bg-white border-b-4 border-black dark:bg-black dark:border-white flex ">
                     <div className="w-auto flex">
                       <div className="flex ml-5 md:ml-2 justify-start items-center gap-2">
@@ -143,7 +154,7 @@ const Slides = () => {
                       <p className="text-black dark:text-white text-start text-3xl font-semibold ">
                         About
                       </p>
-                      <p className="text-black dark:text-white text-start text-2xl mt-4 line-clamp-3 ">
+                      <p className="text-black dark:text-white text-justify text-2xl mt-4 line-clamp-3 ">
                         SIATMA (Sistem Informasi Atma Jaya Yogyakarta) digunakan
                         oleh tenaga kerja perguruan tinggi seperti Admin Kantor
                         Sistem Informasi, Program Studi, Administrasi
@@ -172,16 +183,19 @@ const Slides = () => {
                       </div>
                       <div className="">
                         <ModalPopup
-                          title="Go-Fit"
+                          title="SIATMA"
                           projectImage=""
-                          description=" SIATMA (Sistem Informasi Atma Jaya Yogyakarta) digunakan
+                          description="SIATMA (Sistem Informasi Atma Jaya Yogyakarta) digunakan
                           oleh tenaga kerja perguruan tinggi seperti Admin Kantor
                           Sistem Informasi, Program Studi, Administrasi
-                          Perkuliahan dan Administrasi Ujian. Pengembangan Website ini
-                          menggunakan ASP.NET 6 CORE MVCs."
-                          language1=""
-                          avatar1=""
-                          language2=""
+                          Perkuliahan dan Administrasi Ujian. Beberapa aksi yang
+                          dapat dilakukan yaitu pengelolaan mahasiswa, kurikulum,
+                          penawaran kelas, mata kuliah, dan lain-lain.
+                          Pengembangan Website ini menggunakan ASP.NET 6 CORE MVCs
+                          dan MSSQL untuk pengelolaan database.
+                          "
+                          contributor1="Tanto"
+                          avatar1="./assets/wsp.png"
                           avatar2=""
                           id="1"
                         />
@@ -191,7 +205,7 @@ const Slides = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="bg-white dark:bg-black w-full h-auto border-4 border-black dark:border-white mb-2 dark:mb-2 dark:shadow-[10px_10px_0px_0px_rgba(255,255,255)] shadow-[10px_10px_0px_0px_rgba(0,0,0)]">
+                <div className="bg-white dark:bg-black w-full h-auto border-2 border-black dark:border-white mb-2 dark:mb-2 dark:shadow-[10px_10px_0px_0px_rgba(255,255,255)] shadow-[10px_10px_0px_0px_rgba(0,0,0)]">
                   <div className="bg-white border-b-4 border-black dark:bg-black dark:border-white flex ">
                     <div className="w-auto flex">
                       <div className="flex ml-5 md:ml-2 justify-start items-center gap-2">
@@ -217,12 +231,12 @@ const Slides = () => {
                       <p className="text-black dark:text-white text-start text-3xl font-semibold ">
                         About
                       </p>
-                      <p className="text-black dark:text-white text-start text-2xl mt-4 line-clamp-3 ">
+                      <p className="text-black dark:text-white text-justify text-2xl mt-4 line-clamp-3 ">
                         Proyek ini berfokus pada penyediaan produk. Terdapat 2
                         role yaitu admin dan user. Admin dapat melakukan
                         tindakan CRUD pada suatu produk dan pengguna dapat
                         melihat detail produk. Proyek ini ada dengan tujuan
-                        untuk mengikuti tes dan menambah portofolio
+                        untuk mengikuti tes dan menambah portofolio.
                       </p>
                     </div>
                     <div className="flex justify-between text-center items-center gap-2 mt-7">
@@ -248,11 +262,15 @@ const Slides = () => {
                         <ModalPopup
                           title="Product Catalog"
                           projectImage=""
-                          description="Proyek ini berfokus pada penyediaan produk. Terdapat 2 role yaitu admin dan user. Admin dapat melakukan tindakan CRUD pada suatu produk dan pengguna dapat melihat detail produk. Proyek ini ada dengan tujuan untuk mengikuti tes dan menambah portofolio"
-                          language1=""
-                          avatar1=""
-                          language2=""
-                          avatar2=""
+                          description="   Proyek ini berfokus pada penyediaan produk. Terbagi atas
+                          2 role yaitu Admin dan User. Admin sebagai pengelola
+                          produk dapat melakukan tindakan CRUD pada suatu produk.
+                          Pengguna sebagai pembeli dapat melihat detail produk
+                          seperti ketersediaan barang, harga, dan kategori produk.
+                          Proyek ini dibuat dengan tujuan untuk mengikuti tes dan
+                          menambah portofolio"
+                          contributor1="Tanto"
+                          avatar1="./assets/wsp.png"
                           id="1"
                         />
                       </div>
@@ -261,7 +279,7 @@ const Slides = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="bg-white dark:bg-black w-full h-auto border-4 border-black dark:border-white mb-2 dark:mb-2 dark:shadow-[10px_10px_0px_0px_rgba(255,255,255)] shadow-[10px_10px_0px_0px_rgba(0,0,0)]">
+                <div className="bg-white dark:bg-black w-full h-auto border-2 border-black dark:border-white mb-2 dark:mb-2 dark:shadow-[10px_10px_0px_0px_rgba(255,255,255)] shadow-[10px_10px_0px_0px_rgba(0,0,0)]">
                   <div className="bg-white border-b-4 border-black dark:bg-black dark:border-white flex ">
                     <div className="w-auto flex">
                       <div className="flex ml-5 md:ml-2 justify-start items-center gap-2">
@@ -287,7 +305,7 @@ const Slides = () => {
                       <p className="text-black dark:text-white text-start text-3xl font-semibold ">
                         About
                       </p>
-                      <p className="text-black dark:text-white text-start text-2xl mt-4 line-clamp-3 ">
+                      <p className="text-black dark:text-white text-justify text-2xl mt-4 line-clamp-3 ">
                         MANG(i)A(me) adalah gabungan kata dari Manga dan Anime
                         dimana website ini menampilkan seputar anime favorit dan
                         populer. Fitur seputar Manga sedang dalam pengembangan.
@@ -318,13 +336,13 @@ const Slides = () => {
                         <ModalPopup
                           title="MANGiAme"
                           projectImage="./public/assets/project/manganime.png"
-                          description="MANG(i)A(me) adalah gabungan kata dari Manga dan Anime
-                          dimana website ini menampilkan seputar anime favorit dan
+                          description="MANG(i)A(me) adalah gabungan kata dari 'Manga' dan 'Anime'
+                          dimana website ini menampilkan seputar anime favorit, terbaru, dan
                           populer. Menggunakan Next.js untuk tampilan Front-end
-                          dan menggunakan Jikan API dalam fetch data."
-                          language1="Next JS"
-                          avatar1=""
-                          language2="Tailwind"
+                          dan menggunakan 'Jikan API' dalam fetch data. Tampilan telah mengimplementasikan 
+                          dengan prinsip responsif untuk mobile."
+                          contributor1="Tanto"
+                          avatar1="./assets/wsp.png"
                           avatar2=""
                           id="4"
                         />

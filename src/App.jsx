@@ -32,7 +32,7 @@ const Main = () => {
                     <p className="text-8xl dark:text-2xl">Tanto</p>
                   </div> */}
                   <div className="relative">
-                    <div className="absolute left-2 top-5 ">
+                    <div className="absolute left-5 xl:left-2 top-5 rotate-90 xl:rotate-0">
                       <p className="text-xl dark:text-white absolute -mx-2 md:text-2xl xl:text-4xl font-bold">
                         T
                       </p>
@@ -70,7 +70,7 @@ const Main = () => {
                 <div className="border-2 border-black bg-black dark:bg-white w-8/12 h-auto my-6 ">
                   <div className="flex items-start justify-center ">
                     <div className="w-full h-full xl:h-96 flex justify-center xl:justify-start items-center rounded-2xl border bg-white dark:bg-black dark:border-white border-black">
-                      <div className="h-auto w-auto xl:w-96">
+                      <div className="mt-3 xl:mt-0 h-auto w-auto xl:w-full">
                         <p className="text-xl text-center xl:text-2xl md:text-7xl text-black dark:text-white xl:ml-4">
                           G'day, I'm
                         </p>
@@ -88,7 +88,7 @@ const Main = () => {
                             </IconButton>
                           </a>
                           <a
-                            href="https://drive.google.com/file/d/1jomqspO0c1-_x0Af2ijGrJvp7YcaANgC/view"
+                            href="https://drive.google.com/file/d/1-ksy6bH8xuue-UdEJ28whKqBiBG2RQRW/view"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -96,7 +96,7 @@ const Main = () => {
                               <Grid size={20} />
                             </IconButton>
                           </a>
-                          <a
+                          {/* <a
                             href="https://drive.google.com/file/d/1CCYFrNFdY7lUSR3rWjW0mnBAjXSjfN0y/view"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -104,7 +104,7 @@ const Main = () => {
                             <IconButton text="Portfolio">
                               <File size={20} />
                             </IconButton>
-                          </a>
+                          </a> */}
                         </div>
                         <div className="relative flex justify-center xl:justify-end items-center xl:hidden ">
                           <div className="flex-col">
@@ -182,7 +182,7 @@ const Main = () => {
                       </p>
                     </div>
                     <div className="w-2/3 h-80 rounded-r-2xl border bg-white dark:bg-black border-black dark:border-white flex items-center justify-center">
-                      <p className="text-center px-5 font-medium text-black dark:text-white md:text-xl text-xs xl:text-2xl">
+                      <p className="text-justify xl:text-center px-5 font-medium text-black dark:text-white md:text-xl text-xs xl:text-2xl">
                         Saya seorang Mahasiswa Informatika Universitas Atma Jaya
                         Yogyakarta dengan minat belajar dan ambisi yang tinggi.
                         Saat ini sedang mempelajari dan mendalami Pengembangan
