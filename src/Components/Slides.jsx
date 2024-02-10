@@ -64,9 +64,9 @@ const Slides = () => {
                     </div>
                   </div>
                   <img
-                    src="./public/assets/project/go-fit.png"
+                    src="./public/assets/go-fit.png"
                     alt="..."
-                    className=" w-40 h-40 object-fill overflow-hidden"
+                    className="w-100 h-80 overflow-hidden"
                   />
                   <div className="flex-col m-5">
                     <div className="my-3">
@@ -145,9 +145,9 @@ const Slides = () => {
                     </div>
                   </div>
                   <img
-                    src="./public/assets/project/siatma.png"
+                    src="./public/assets/siatma.png"
                     alt="..."
-                    className=" w-40 h-40 object-fill overflow-hidden"
+                    className="w-100 h-80 overflow-hidden"
                   />
                   <div className="flex-col m-5">
                     <div className="my-3">
@@ -222,9 +222,9 @@ const Slides = () => {
                     </div>
                   </div>
                   <img
-                    src="./public/assets/project/product.png"
+                    src="./public/assets/product.png"
                     alt="..."
-                    className=" w-40 h-40 object-fill overflow-hidden"
+                    className="w-100 h-80 overflow-hidden"
                   />
                   <div className="flex-col m-5">
                     <div className="my-3">
@@ -296,9 +296,9 @@ const Slides = () => {
                     </div>
                   </div>
                   <img
-                    src="./public/assets/project/manganime.png"
+                    src="./public/assets/manganime.png"
                     alt="..."
-                    className=" w-40 h-40 object-fill overflow-hidden"
+                    className="w-100 h-80 overflow-hidden"
                   />
                   <div className="flex-col m-5">
                     <div className="my-3">
@@ -335,7 +335,6 @@ const Slides = () => {
                       <div className="">
                         <ModalPopup
                           title="MANGiAme"
-                          projectImage="./public/assets/project/manganime.png"
                           description="MANG(i)A(me) adalah gabungan kata dari 'Manga' dan 'Anime'
                           dimana website ini menampilkan seputar anime favorit, terbaru, dan
                           populer. Menggunakan Next.js untuk tampilan Front-end
