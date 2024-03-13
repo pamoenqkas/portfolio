@@ -50,6 +50,10 @@ const Slides = () => {
               pagination={{
                 type: "progressbar",
               }}
+              autoplay={{ // Add autoplay option
+                delay: 2500, // Delay between transitions in milliseconds
+                disableOnInteraction: false, // Disable autoplay on user interaction
+              }}
             >
               <SwiperSlide>
                 <div className="bg-white dark:bg-black w-full h-auto border-2 border-black dark:border-white mb-2 dark:mb-2 dark:shadow-[10px_10px_0px_0px_rgba(255,255,255)] shadow-[10px_10px_0px_0px_rgba(0,0,0)]">

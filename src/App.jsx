@@ -1,20 +1,13 @@
-import { useState } from "react";
-
-import EmailForm from "./Components/EmailForm";
-import ProjectCard from "./Components/ProjectCard";
-
 import React from "react";
-import { GitHub, Linkedin, Grid, Instagram, Mail, File } from "react-feather";
+import { GitHub, Grid } from "react-feather";
 import { CiCircleCheck } from "react-icons/ci";
 
 import ThemeSwitcher from "./Components/ThemeSwitcher";
 import IconButton from "./Components/IconButton";
-import { Route, Routes } from "react-router-dom";
 import Slides from "./Components/Slides";
-import Modal from "./Components/Modal";
 
 import { TypeAnimation } from "react-type-animation";
-import { Divider } from "@nextui-org/react";
+import ContactMe from "./Components/ContactMe";
 
 const Main = () => {
   return (
@@ -70,7 +63,7 @@ const Main = () => {
                     <div className="w-full h-full xl:h-96 flex justify-center xl:justify-start items-center rounded-2xl border bg-white dark:bg-black dark:border-white border-black">
                       <div className="mt-3 xl:mt-0 h-auto w-auto xl:w-full">
                         <p className="text-xl text-center xl:text-2xl md:text-7xl text-black dark:text-white xl:ml-4">
-                          G'day, I'm
+                          G day, I m
                         </p>
                         <p className="text-4xl text-center md:text-7xl text-black dark:text-white font-bold xl:ml-7">
                           Wahyu Sutanto P.
@@ -261,13 +254,13 @@ const Main = () => {
                         </div>
                         <div className="w-full flex-row">
                           <div className="relative">
-                            <div className="absolute -bottom-52  xl:-bottom-12 xl:left-1/2 transform xl:-translate-x-1/2 xl:-translate-y-1/2 mt-3">
+                            <div className="absolute -bottom-52 xl:-bottom-12 xl:left-1/2 transform xl:-translate-x-1/2 xl:-translate-y-1/2 mt-3">
                               <span className="text-3xl text-black dark:text-white font-semibold ">
-                                Back-end
+                                Back-end sss
                               </span>
                             </div>
                             <div className="absolute -left-5 xl:left-2 xl:top-9 -bottom-80 w-1/2">
-                            {/* <div className="absolute left-0 xl:top-9 -bottom-80 w-1/2"> */}
+                              {/* <div className="absolute left-0 xl:top-9 -bottom-80 w-1/2"> */}
                               <div className="flex flex-col items-start justify-center mt-6 gap-3">
                                 <div className="flex items-center justify-center gap-2 ">
                                   <CiCircleCheck className="text-green-400 " />
@@ -590,19 +583,18 @@ const Main = () => {
         </div>
       </section> */}
 
-      <section id="contact-me">{/* <EmailForm /> */}</section>
-      {/* <section id="footer">
-        <div className="mt-20 bg-white border border-stone-800 w-full">
+      {/* <section id="contact-me"><EmailForm /></section> */}
+      {/* <section id="footer" className="p-1 flex place-items-center justify-center">
+        <div className="w-8/12 h-40 bg-white border-2 border-black p-2">
           <div className="flex items-center justify-center">
-            <div className="flex flex-col">
-              <div>asd</div>
-              <div>asd</div>
+            <h1 className="text-3xl">Tanto</h1>
 
-              <div>asd</div>
-            </div>
           </div>
         </div>
       </section> */}
+      <section id="contact-me">
+        <ContactMe />
+      </section>
     </div>
   );
 };

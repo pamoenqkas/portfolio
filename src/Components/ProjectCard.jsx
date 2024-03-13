@@ -49,8 +49,8 @@ const ProjectCard = ({
             className="mySwiper"
             centeredSlides={true}
             autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
+              delay: 2000,
+              disableOnInteraction: true,
             }}
             grabCursor={true}
             modules={[Autoplay, Pagination, Navigation]}

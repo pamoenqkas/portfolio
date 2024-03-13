@@ -47,8 +47,7 @@ export const EmailForm = () => {
                 Contact Me
               </h1>
               <div className="flex flex-col">
-                <div className="w-full p-4">
-                  {/* kiri */}
+                {/* <div className="w-full p-4">
                   <p className="font-mono text-lg mb-1 mx-4 p-4 text-center text-slate-800 dark:text-gray-400 xl:text-center">
                     I really enjoy communicating and sharing information. If you
                     have any questions, requests, or want to discuss the
@@ -59,49 +58,7 @@ export const EmailForm = () => {
                     Thank you for your interest and I hope to hear from you
                     soon!
                   </p>
-                  <div className="flex">
-                    <div className="md:w-1/2">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/wahyusutantop/"
-                        className="block rounded-lg  p-4 relative transition-all"
-                      >
-                        <div className="bg-white hover:bg-gradient-to-bl from-pink-500 to-blue-200 dark:hover:bg-gray-600 dark:bg-gray-800 rounded-lg shadow-md p-4 relative">
-                          <h2 className="font-semibold text-lg text-gray-800 dark:text-gray-200">
-                            LinkedIn
-                          </h2>
-                          <p className="align-middle text-gray-600 dark:text-gray-400">
-                            Wahyu Sutanto P
-                          </p>
-                          <div className="absolute top-2 right-2">
-                            <Linkedin size={20} />
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div className="md:w-1/2"> 
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://wa.me/6282172375366"
-                        className="block dark:hover:bg-gray-600 rounded-lg  p-4 relative transition-all"
-                      >
-                        <div className="bg-white hover:bg-gradient-to-bl from-pink-500 to-blue-200 dark:hover:bg-gray-600 dark:bg-gray-800 rounded-lg shadow-md p-4 relative">
-                          <h2 className="font-semibold text-lg text-gray-800 dark:text-gray-200">
-                            Whatsapp
-                          </h2>
-                          <p className="text-gray-600 dark:text-gray-400">
-                            +62821 7237 5366
-                          </p>
-                          <div className="absolute top-2 right-2">
-                            <FaWhatsapp className="text-green-500 text-2xl" />
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                </div> */}
                 <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
                   {/* kanan */}
                   <form
